@@ -35,6 +35,10 @@ export default {
       this.$store.dispatch('bindArticles')
       this.$store.dispatch('bindFaqs')
     }
+    if (this.config.datastore === 'api') {
+      this.$store.dispatch('loadArticles')
+      this.$store.dispatch('loadFaqs')
+    }
   }
 }
 </script>

@@ -1,4 +1,4 @@
-const API_URL = 'http://localhost:4567'
+const API_URL = 'http://dev.test:4567'
 const ADMIN_URL = 'http://localhost:4567/admin'
 
 import axios from 'axios'
@@ -20,7 +20,7 @@ export const apiActions = {
   },
   loadFaqs ({commit}) {
     axios.get(API_URL + '/faqs').then(response => {
-      commit('LOAD_FAQS', response.data.articles)
+      commit('LOAD_FAQS', response.data.faqs)
     }).catch(err => {
       console.log(err)
     })

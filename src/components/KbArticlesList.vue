@@ -1,26 +1,33 @@
 <template>
   <div>
     <h4 class="title is-4">Articles</h4>
-    <div
-      v-for="(chunk, index) in chunkedArticlesBySubject"
-      :key="index + 1"
-      class="columns"
-    >
+    <div v-if="articles.length > 1">
       <div
-        v-for="(articleGroup, index) in chunk"
+        v-for="(chunk, index) in chunkedArticlesBySubject"
         :key="index + 1"
-        class="column"
+        class="columns"
       >
-        <!-- Column 1 -->
-        <h5 class="title is-5">
-          {{ articleGroup[0] }}
-        </h5>
-        <div v-for="(article, index) in Object.values(articleGroup[1])" :key="index+1">
-          <router-link :to="{name: 'KbArticle', params: {id: article.id}}">
-            <i class="fas fa-book"></i> <span>{{ article.title }}</span>
-          </router-link>
+        <div
+          v-for="(articleGroup, index) in chunk"
+          :key="index + 1"
+          class="column"
+        >
+          <!-- Column 1 -->
+          <h5 class="title is-5">
+            {{ articleGroup[0] }}
+          </h5>
+          <div v-for="(article, index) in Object.values(articleGroup[1])" :key="index+1">
+            <router-link :to="{name: 'KbArticle', params: {id: article.id}}">
+              <i class="fas fa-book"></i> <span>{{ article.title }}</span>
+            </router-link>
+          </div>
         </div>
       </div>
+    </div>
+    <div v-else>
+      <h5 class="info has-text-danger">
+        No Articles Yet
+      </h5>
     </div>
   </div>
 </template>
