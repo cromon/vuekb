@@ -29,6 +29,12 @@ export default {
     KbHeader,
     KbSearch,
     KbSideMenu
+  },
+  created () {
+    if (this.config.datastore === 'firebase') {
+      this.$store.dispatch('bindArticles')
+      this.$store.dispatch('bindFaqs')
+    }
   }
 }
 </script>
