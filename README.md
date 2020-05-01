@@ -80,3 +80,16 @@ yarn lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+# Donate
+
+If you use this app, please consider making a donation to keep the project alive.
+
+- [Donate via Paypal](https://paypal.me/vuekb)
+- [Donate via Bitcoin](https://i.imgur.com/xicPYkR.png) `15mUcgU8Qzk22dU9ueP7S2MifGFDUxYsxD`
+- [Donate via Dash](https://i.imgur.com/3eqMolV.png) `XiFn1LsnJQCyDDQyCbsLXA6RExECNbk2H9`
+- [Donate via Doge](https://i.imgur.com/mVr4dXO.png) `DTv2cCVh1wSVGFUZjS568txX7oZn3WPQLh`
+
+# License
+
+MIT © [Cromon LTD](https://github.com/cromon)
