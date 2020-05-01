@@ -1,6 +1,6 @@
 # VueKb
 
-A customisable Knowledgebase app.
+A customisable Knowledgebase app in Vuejs.
 
 Using Vue and Buefy (Bulma) for component styling. With options for using Firebase or a custom API datastore.
 
@@ -34,7 +34,6 @@ Allows you to use hard-coded data in your app, directly stored in the state vari
 
 TODO: write spec for using JSON imports as data store.
 
-
 ## Articles
 
 An article is assumed to have the following schema, you are welcome to change this, but it is less hassle if you use the pre-defined schema.
@@ -42,12 +41,11 @@ An article is assumed to have the following schema, you are welcome to change th
 ```json
 article: {
   id: UUID | Integer,
+  subject: String,
   title: String,
-  summary: String,
   content: String | HTML
 }
 ```
-
 ## FAQs
 
 An FAQ is assumed to have the following schema, you are welcome to change this, but it is less hassle if you use the pre-defined schema.
@@ -59,7 +57,6 @@ faq: {
   answer: String
 }
 ```
-
 
 ## Project setup
 ```

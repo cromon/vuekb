@@ -1,5 +1,5 @@
 <template>
-  <div class="columns">
+  <div class="columns" v-if="article">
     <div class="column is-three-quarters">
       <div class="card">
         <header class="card-header">

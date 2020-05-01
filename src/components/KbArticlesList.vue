@@ -1,7 +1,7 @@
 <template>
   <div>
     <h4 class="title is-4">Articles</h4>
-    <div v-if="articles.length > 1">
+    <div v-if="articles.length > 0">
       <div
         v-for="(chunk, index) in chunkedArticlesBySubject"
         :key="index + 1"

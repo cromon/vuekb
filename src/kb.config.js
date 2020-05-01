@@ -1,7 +1,10 @@
 const config = {
   articleContent: true,
+  datastore: 'vuex', // 'firebase', 'api', 'vuex'
   faqContent: true,
-  datastore: 'api', // 'firebase', 'api', 'vuex'
+  // firebase: {
+  //   projectId: 'firestore-name'
+  // }
 }
 
 export default config

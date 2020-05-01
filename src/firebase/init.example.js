@@ -6,7 +6,7 @@ const firebaseConfig = {
   // apiKey: '',
   // authDomain: '',
   // databaseURL: '',
-  projectId: '',
+  projectId: config.firebase ? config.firebase.projectId : '',
   // storageBucket: '',
   // messagingSenderId: '',
   // appId: ''

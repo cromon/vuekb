@@ -6,6 +6,11 @@
 
 <script>
 export default {
-  name: 'KbAdmin'
+  name: 'KbAdmin',
+  computed: {
+    articleCount () {
+      return this.$store.state.articles.length
+    }
+  }
 }
 </script>
