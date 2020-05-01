@@ -50,7 +50,5 @@ article: {
     subject: 'Config',
     title: 'Global Config',
     content: `Some extra content...`
-  },
-  { id: '7', subject: 'Recordings', title: 'Recordings can have articles too', content: `Some recordings content...` },
-  { id: '8', subject: 'Companies', title: 'Company articles are nice', content: `Some companies content...` }
+  }
 ]

@@ -4,6 +4,8 @@ A customisable Knowledgebase app in Vuejs.
 
 Using Vue and Buefy (Bulma) for component styling. With options for using Firebase or a custom API datastore.
 
+![preview](/media/preview-homepage.png)
+
 ## Config
 
 You can find a config file (kb.config.js) in the root of the src directory. It is also imported as a global mixin to make options available in the app as computed properties.
