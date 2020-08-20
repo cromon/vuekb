@@ -12,7 +12,7 @@
     "buefy": "^0.8.13",
     "core-js": "^3.6.4",
     "firebase": "^7.10.0",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.19",
     "sass-loader": "^8.0.2",
     "vue": "^2.6.12",
     "vue-router": "^3.1.6",
