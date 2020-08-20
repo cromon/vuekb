@@ -8,6 +8,7 @@ import apiActions from './apiActions'
 
 // default articles
 import articles from './articles'
+import auth from './auth'
 
 // decide which mutations and / or actions to load dependant on which datastore you are using.
 let loadedActions
@@ -29,6 +30,7 @@ switch (config.datastore) {
 }
 
 const state = {
+  ...auth.state,
   // articles: [],
   // faqs: []
   articles: articles,
@@ -43,6 +45,7 @@ const state = {
 }
 
 const getters = {
+  ...auth.getters,
   subjects: state => {
     return [...new Set(state.articles.map(article => article.subject))]
   },
@@ -55,6 +58,7 @@ const getters = {
 }
 
 const mutations = {
+  ...auth.mutations,
   ...loadedMutations,
   'LOAD_ARTICLES' (state, payload) {
     state.articles = payload
@@ -71,6 +75,7 @@ const mutations = {
 }
 
 const actions = {
+  ...auth.actions,
   ...loadedActions
 }
 
