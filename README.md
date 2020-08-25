@@ -42,7 +42,7 @@ TODO: write spec for using JSON imports as data store.
 
 An article is assumed to have the following schema, you are welcome to change this, but it is less hassle if you use the pre-defined schema.
 
-```json
+```js
 article: {
   id: UUID | Integer,
   subject: String,
@@ -54,7 +54,7 @@ article: {
 
 An FAQ is assumed to have the following schema, you are welcome to change this, but it is less hassle if you use the pre-defined schema.
 
-```json
+```js
 faq: {
   id: UUID | Integer,
   question: String,
