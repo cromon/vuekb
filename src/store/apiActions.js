@@ -1,6 +1,4 @@
-const API_URL = 'http://dev.test:4567'
-const ADMIN_URL = 'http://localhost:4567/admin'
-
+import { API_URL, ADMIN_URL } from './api'
 import axios from 'axios'
 
 export const apiActions = {

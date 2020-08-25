@@ -8,6 +8,8 @@ Using Vue and Buefy (Bulma) for component styling. With options for using Fireba
 
 ## Config
 
+See [SETUP](/SETUP.md) for more detailed setup instructions.
+
 You can find a config file (kb.config.js) in the root of the src directory. It is also imported as a global mixin to make options available in the app as computed properties.
 
 | Name | Description | Type | Values | Default |

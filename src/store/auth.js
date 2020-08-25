@@ -1,4 +1,4 @@
-import config from '@/kb.config'
+// import config from '@/kb.config'
 
 const state = {
   currentAdmin: null
@@ -13,9 +13,9 @@ const mutations = {
 }
 
 const actions = {
-  login ({commit}, payload) {
+  // login ({commit}, payload) {
     
-  }
+  // }
 }
 
 export default {

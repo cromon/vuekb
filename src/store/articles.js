@@ -31,7 +31,7 @@ article: {
     id: '3',
     subject: 'Datastores',
     title: 'Datastore options',
-    content: `Kbvue is setup to easily switch between 3 different datastores: Firebase, API and Vuex (static information like in this example)`
+    content: `Kbvue is setup to easily switch between 3 different datastores: Firebase, API and Vuex (static information like in this self documenting example)`
   },
   {
     id: '4',
@@ -49,6 +49,31 @@ article: {
     id: '6',
     subject: 'Config',
     title: 'Global Config',
-    content: `Some extra content...`
+    content: `<table class="table is-fullwidth is-striped is-bordered">
+    <thead><tr><th>Name</th><th>Description</th><th>Type</th><th>Values</th><th>Default</th></tr></thead>
+    <tbody>
+    <tr>
+    <td>articleContent</td>
+    <td>Will you be providing Articles?</td>
+    <td>Boolean</td>
+    <td>true / false</td>
+    <td>true</td>
+    </tr>
+    <tr>
+    <td>faqContent</td>
+    <td>Will you be providing FAQs?</td>
+    <td>Boolean</td>
+    <td>true / false</td>
+    <td>true</td>
+    </tr>
+    <tr>
+    <td>datastore</td>
+    <td>What kind of datastore will you be using</td>
+    <td>String</td>
+    <td>firebase / api / vuex / json</td>
+    <td>firebase</td>
+    </tr>
+    </tbody>
+    </table>`
   }
 ]

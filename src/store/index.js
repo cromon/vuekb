@@ -6,8 +6,11 @@ import config from '@/kb.config'
 import { firebaseActions, firebaseMutations} from './firebase'
 import apiActions from './apiActions'
 
-// default articles
+// default vuex datastore
 import articles from './articles'
+import faqs from './faqs'
+
+// Auth not yet implemented
 import auth from './auth'
 
 // decide which mutations and / or actions to load dependant on which datastore you are using.
@@ -34,14 +37,7 @@ const state = {
   // articles: [],
   // faqs: []
   articles: articles,
-  faqs: [
-    { id: '1', question: 'How does this work?', answer: 'fdsf' },
-    { id: '2', question: 'What are you doing?', answer: '' },
-    { id: '3', question: 'Where are we going', answer: '' },
-    { id: '4', question: 'Who are you?', answer: '' },
-    { id: '5', question: 'Are we nearly there yet?', answer: '' },
-    { id: '6', question: 'Why are we here?', answer: '' }
-  ]
+  faqs: faqs
 }
 
 const getters = {

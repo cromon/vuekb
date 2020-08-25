@@ -1,7 +1,7 @@
 <template>
   <div>
     <h4 class="title is-4">FAQs</h4>
-    <div v-if="faqs.length > 1">
+    <div v-if="faqs.length >= 1">
       <p
         v-for="(faq, index) in faqs"
         :key="index + 1"
